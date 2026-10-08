@@ -12,8 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          submodules: recursive
+        # The public presentation is independent of the private legacy submodule.
       - uses: actions/setup-node@v4
         with:
           node-version: 22

@@ -16,7 +16,9 @@ npm run build
 
 The normal build is in `dist/`, with the existing GitHub Pages base `/Canary-Charity-Club/`. `build.yml` verifies the presentation. `pages.yml` builds and deploys the polished branch to **https://canary.pswork.dev/** through GitHub Actions and GitHub Pages, using Pages metadata to choose the correct asset base.
 
-The deployment repository is [JimmyK300/Canary-Charity-Club](https://github.com/JimmyK300/Canary-Charity-Club), a fork because the current account cannot administer Pages in the organization repository. The organization remote is preserved as `origin`; publish the presentation branch to the `deploy` remote to update this demo. Recursive checkout initializes the shared-component submodule. GitHub's `github-pages` environment permits `main` and `codex/canary-presentation`.
+The deployment repository is [JimmyK300/Canary-Charity-Club](https://github.com/JimmyK300/Canary-Charity-Club), a fork because the current account cannot administer Pages in the organization repository. The organization remote is preserved as `origin`; publish the presentation branch to the `deploy` remote to update this demo. GitHub's `github-pages` environment permits `main` and `codex/canary-presentation`.
+
+`Section-And-Core-Component` remains a private Git submodule for legacy development. The current public presentation does not import it, so both public CI workflows intentionally skip submodule checkout and need no cross-repository access token. Developers using legacy shared components must initialize it with their existing authorized GitHub account.
 
 For a separate review host at the domain root:
 
