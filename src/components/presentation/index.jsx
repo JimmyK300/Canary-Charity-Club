@@ -69,8 +69,8 @@ export function Entries({ title, description, data, type, limit }) {
                 <img
                   src={`${import.meta.env.BASE_URL}${item.thumbnail.src}`}
                   alt={item.thumbnail.alt}
-                  width="640"
-                  height="424"
+                  width={item.thumbnail.width || 640}
+                  height={item.thumbnail.height || 424}
                   loading="lazy"
                 />
               ) : (
@@ -120,6 +120,37 @@ Entries.propTypes = {
   type: PropTypes.string,
   limit: PropTypes.number,
 };
+export function PhotoGallery({ photos }) {
+  return (
+    <section className="section container">
+      <div className="section-heading">
+        <div>
+          <h2>Canary qua những khung hình</h2>
+          <p>
+            Những hình ảnh từ album của câu lạc bộ. Chọn một ảnh để xem thêm tư liệu.
+          </p>
+        </div>
+      </div>
+      <div className="archive-gallery">
+        {photos.map((photo) => (
+          <figure key={photo.src}>
+            <Link to={`/detail-page?id=${encodeURIComponent(photo.detailId)}`}>
+              <img
+                src={`${import.meta.env.BASE_URL}${photo.src}`}
+                alt={photo.alt}
+                width={photo.width}
+                height={photo.height}
+                loading="lazy"
+              />
+            </Link>
+            <figcaption>{photo.caption}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </section>
+  );
+}
+PhotoGallery.propTypes = { photos: PropTypes.array.isRequired };
 export function SupportCTA() {
   return (
     <section className="support-band">

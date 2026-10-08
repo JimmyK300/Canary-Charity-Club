@@ -25,6 +25,10 @@ npm run preview -- --base=/ --outDir dist-review --host 127.0.0.1 --port 4175
 
 ## Content and contact boundaries
 
+The current archive uses **11 unique original image files** (excluding the branding illustration): 4 Concert Trầm, 6 Quảng Ngãi, and 1 Gia Đình 3 — Yêu. Each main page has a distinct lead image. Stories includes a linked photo gallery; the existing detail page shows complete album selections with neutral visible-scene captions. Concert collage artwork is preserved as supplied by the club. The soft Bắc Trà My JPEG was reviewed and excluded from this selection.
+
+The complete original filenames, Drive file IDs, original SHA-256 hashes and optimized dimensions are recorded in [`public/images/archive/provenance.json`](public/images/archive/provenance.json). New originals were read from the same authenticated personal Drive source on 8 October 2026. Only orientation, size and WebP encoding changed; no scenes were generated or altered. Gia Đình 3 — Yêu source folder: `1ZG_pSkC7A0UOkUBy-jYM9GO3ihA8GLHY` under Thiện nguyện. Photographs do not establish dates, beneficiary circumstances, donation values or outcomes.
+
 `src/data/public-content.json` contains the suitable Vietnamese introduction and mission/vision from the project's existing Firestore content, reviewed on 8 October 2026. Activity and story entries use verified source-album titles and neutral visible-photo descriptions, instead of synthetic narratives. The presentation excludes unverified impact figures, test member/contact/donor data, contradictory detailed articles, and the sample donation QR code. Article links preserve their identifier across refresh; dates and full reports have an honest pending-content state.
 
 The original Firebase Storage photos return HTTP 402. Originals were recovered from the user's connected club Drive albums. Local WebP files in `public/images/archive/` preserve the original images with only orientation/size/encoding optimization. No stock or generated event photos are used.

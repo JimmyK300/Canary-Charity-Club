@@ -1,0 +1,233 @@
+[
+  {
+    "name": "concert-stage",
+    "fileId": "1wh6T4P62teBGa16ZockLP8T7vo9a41GW",
+    "originalName": "425728795_367576992890595_7398408127838665317_n.jpg",
+    "album": "Gây quỹ / Concert Trầm-Gen 2",
+    "sha256": "efc9e328ee94ce614e7ac48a818b8443c62d504e2968c02bbc60b23413ea57d1",
+    "variants": [
+      {
+        "file": "concert-stage-640.webp",
+        "width": 640,
+        "height": 640,
+        "bytes": 72096
+      },
+      {
+        "file": "concert-stage-1280.webp",
+        "width": 1080,
+        "height": 1080,
+        "bytes": 158334
+      }
+    ]
+  },
+  {
+    "name": "concert-moment",
+    "fileId": "1C6Dd7MACQ_ZtYuZP0RJeCE6EgMHkK0PD",
+    "originalName": "424914741_367576986223929_484299831123331642_n.jpg",
+    "album": "Gây quỹ / Concert Trầm-Gen 2",
+    "sha256": "ef020fec624a88de5cce19940422fef2f0a5ca18baacea2b78a3e37262afb824",
+    "variants": [
+      {
+        "file": "concert-moment-640.webp",
+        "width": 640,
+        "height": 640,
+        "bytes": 60628
+      },
+      {
+        "file": "concert-moment-1280.webp",
+        "width": 1080,
+        "height": 1080,
+        "bytes": 131068
+      }
+    ]
+  },
+  {
+    "name": "concert-friends",
+    "fileId": "1WhrK7T8N18tqLmv7LKpzXFhuGFI_88fl",
+    "originalName": "425905978_367576959557265_5632772841072569413_n.jpg",
+    "album": "Gây quỹ / Concert Trầm-Gen 2",
+    "sha256": "40e2d29d114547d68d04feb3bd7cd965e5cc296ac302163566a12e2c33e9c5d8",
+    "variants": [
+      {
+        "file": "concert-friends-640.webp",
+        "width": 640,
+        "height": 640,
+        "bytes": 78398
+      },
+      {
+        "file": "concert-friends-1280.webp",
+        "width": 1080,
+        "height": 1080,
+        "bytes": 164788
+      }
+    ]
+  },
+  {
+    "name": "quang-ngai-gifts",
+    "fileId": "1J4M9yj0Xjut2KTSUZZD1KdEIPyIdhzJa",
+    "originalName": "20240810_101625.jpg",
+    "album": "Thiện nguyện / Quảng Ngãi-Trọn Niềm Vui-Gen 2",
+    "sha256": "93b7de194778ab0d78e26dd86001a4daa8fe255b11b9bda12fd78c8d0520fb2c",
+    "variants": [
+      {
+        "file": "quang-ngai-gifts-640.webp",
+        "width": 640,
+        "height": 360,
+        "bytes": 40106
+      },
+      {
+        "file": "quang-ngai-gifts-1280.webp",
+        "width": 1280,
+        "height": 721,
+        "bytes": 132662
+      }
+    ]
+  },
+  {
+    "name": "quang-ngai-school-group",
+    "fileId": "1sdOAO7kIVpU8qfBzCw-9qWmb7l39_k_W",
+    "originalName": "20240810_102511.jpg",
+    "album": "Thiện nguyện / Quảng Ngãi-Trọn Niềm Vui-Gen 2",
+    "sha256": "1af0a6a32e52660caef0663bfa178b23a58a2ee2fb1cf831ccd98dae50357997",
+    "variants": [
+      {
+        "file": "quang-ngai-school-group-640.webp",
+        "width": 640,
+        "height": 480,
+        "bytes": 55326
+      },
+      {
+        "file": "quang-ngai-school-group-1280.webp",
+        "width": 1280,
+        "height": 960,
+        "bytes": 207072
+      }
+    ]
+  },
+  {
+    "name": "quang-ngai-cleaning",
+    "fileId": "1jhbgAAsZrDqHW3Nu2qSgBgpsITM1jsO2",
+    "originalName": "20240810_141518(1).jpg",
+    "album": "Thiện nguyện / Quảng Ngãi-Trọn Niềm Vui-Gen 2",
+    "sha256": "87c3d93f37f6034d973ee5b28355086252c84bedd6b51d0f1db0d3f8b4c1fbe5",
+    "variants": [
+      {
+        "file": "quang-ngai-cleaning-640.webp",
+        "width": 640,
+        "height": 480,
+        "bytes": 39188
+      },
+      {
+        "file": "quang-ngai-cleaning-1280.webp",
+        "width": 1280,
+        "height": 960,
+        "bytes": 140466
+      }
+    ]
+  },
+  {
+    "name": "quang-ngai-visitors",
+    "fileId": "1lCz77sGGGkeIOsCM61ABPU-B8r6QOlNW",
+    "originalName": "20240810_150611(1).jpg",
+    "album": "Thiện nguyện / Quảng Ngãi-Trọn Niềm Vui-Gen 2",
+    "sha256": "2fa465053dc2a7528ed1c06cd5ba60f2e36e1bd722dd41ce4607dd36cb64828f",
+    "variants": [
+      {
+        "file": "quang-ngai-visitors-640.webp",
+        "width": 640,
+        "height": 360,
+        "bytes": 42496
+      },
+      {
+        "file": "quang-ngai-visitors-1280.webp",
+        "width": 1280,
+        "height": 721,
+        "bytes": 154518
+      }
+    ]
+  },
+  {
+    "name": "gia-dinh-3",
+    "fileId": "1jC6mLKQ3fFKOwZpL2b7PvbyW6Sj8idms",
+    "originalName": "1.JPG",
+    "album": "Thiện nguyện / Gia Đình 3-Yêu",
+    "sha256": "03f6f8895ede8059a2e340db7df279d6bbbb4d570fae34d2554db8c8d84df009",
+    "variants": [
+      {
+        "file": "gia-dinh-3-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 36454
+      },
+      {
+        "file": "gia-dinh-3-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 94668
+      }
+    ]
+  },
+  {
+    "name": "concert-tram",
+    "fileId": "1mDuq0MgoJzHPBEHHRTb4Xg8Cv8TzPP7V",
+    "originalName": "425684272_367576962890598_8414411504320186197_n (2).jpg",
+    "album": "Gây quỹ / Concert Trầm-Gen 2",
+    "sha256": "82f6bf3d8b3fe9f03c58c289d3136f870c6194054bd427ef9769a3e6d857743c",
+    "variants": [
+      {
+        "file": "concert-tram-640.webp",
+        "width": 640,
+        "height": 424,
+        "bytes": 46904
+      },
+      {
+        "file": "concert-tram-1280.webp",
+        "width": 1280,
+        "height": 849,
+        "bytes": 112572
+      }
+    ]
+  },
+  {
+    "name": "quang-ngai-activity",
+    "fileId": "1r251YtJA_40it1X-IaMIEr8krw1ehlxz",
+    "originalName": "20240810_092048.jpg",
+    "album": "Thiện nguyện / Quảng Ngãi-Trọn Niềm Vui-Gen 2",
+    "sha256": "62fa051ed1d452acdf5f0b0cbc902a9d8f26a5a6884f72be43dfa67d6adb3d41",
+    "variants": [
+      {
+        "file": "quang-ngai-activity-640.webp",
+        "width": 640,
+        "height": 853,
+        "bytes": 97612
+      },
+      {
+        "file": "quang-ngai-activity-1280.webp",
+        "width": 960,
+        "height": 1280,
+        "bytes": 184710
+      }
+    ]
+  },
+  {
+    "name": "quang-ngai-group",
+    "fileId": "1jchymvyl4he-rqNAiPVawUeKeWLyWlk1",
+    "originalName": "z5719517248343_829ac20c6a3d25710cc371e1f2be9185.jpg",
+    "album": "Thiện nguyện / Quảng Ngãi-Trọn Niềm Vui-Gen 2",
+    "sha256": "bdb65c095c48bc99071d3961c267eb939f31cc48f4ad1fc924897f1e950ff0fe",
+    "variants": [
+      {
+        "file": "quang-ngai-group-640.webp",
+        "width": 640,
+        "height": 853,
+        "bytes": 200654
+      },
+      {
+        "file": "quang-ngai-group-1280.webp",
+        "width": 960,
+        "height": 1280,
+        "bytes": 454454
+      }
+    ]
+  }
+]

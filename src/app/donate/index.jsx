@@ -35,6 +35,10 @@ export default function DonatePage() {
       <Hero
         title="Sự sẻ chia bắt đầu từ bạn."
         description="Có nhiều cách để đồng hành: dành thời gian, chia sẻ nguồn lực hoặc hỗ trợ một hoạt động."
+        image="images/archive/gia-dinh-3-1280.webp"
+        imageAlt="Người lớn và trẻ em cùng chụp ảnh trong một phòng sinh hoạt"
+        caption="Gia Đình 3 — Yêu · Tư liệu câu lạc bộ"
+        imageHeight={853}
       >
         <button
           className="button"

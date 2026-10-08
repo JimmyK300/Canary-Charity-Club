@@ -5,9 +5,10 @@ import {
   Entries,
   SupportCTA,
   DemoNote,
+  PhotoGallery,
 } from "../../components/presentation";
 export default function StoriesPage() {
-  const { story_overviews } = useContext(GlobalContext);
+  const { story_overviews, archive_gallery } = useContext(GlobalContext);
   return (
     <>
       <Hero
@@ -25,6 +26,7 @@ export default function StoriesPage() {
         data={story_overviews}
         type="story"
       />
+      <PhotoGallery photos={archive_gallery} />
       <SupportCTA />
       <DemoNote />
     </>

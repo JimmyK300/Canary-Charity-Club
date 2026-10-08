@@ -13,10 +13,11 @@ export default function EventsPage() {
       <Hero
         title="Cùng nhau hành động."
         description="Những cuộc gặp gỡ, hoạt động và dự án được chia sẻ trên website Canary."
-        image="images/archive/concert-tram-1280.webp"
-        imageAlt="Các thành viên Canary trong ảnh recap Concert Trầm"
+        image="images/archive/concert-stage-1280.webp"
+        imageAlt="Chùm ảnh các tiết mục hát, nhảy và chơi nhạc trong album Concert Trầm"
         caption="Concert Trầm · Tư liệu câu lạc bộ, Gen 2"
-        imageHeight={849}
+        imageHeight={1080}
+        imageWidth={1080}
         compact
       />
       <Entries

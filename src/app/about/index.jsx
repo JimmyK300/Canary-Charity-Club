@@ -8,11 +8,11 @@ export default function AboutPage() {
       <Hero
         title="Về Canary"
         description={hero_sections.about.description}
-        image="images/archive/quang-ngai-activity-1280.webp"
-        imageAlt="Một thành viên Canary trò chuyện cùng các em nhỏ trong tư liệu Quảng Ngãi"
+        image="images/archive/quang-ngai-school-group-1280.webp"
+        imageAlt="Ảnh tập thể trước bảng Trọn Niềm Vui ở sân trường"
         caption="Quảng Ngãi — Trọn Niềm Vui · Tư liệu câu lạc bộ, Gen 2"
-        imageHeight={1280}
-        imageWidth={960}
+        imageHeight={960}
+        imageWidth={1280}
         compact
       />
       <section className="section container statement-grid">

@@ -27,16 +27,20 @@ export default function DetailContent() {
           <p className="detail-lead">
             {item.abstract || "Bài viết chi tiết đang được chuẩn bị."}
           </p>
-          {item.photos?.map((photo) => (
-            <figure className="detail-photo" key={photo.src}>
-              <img
-                src={`${import.meta.env.BASE_URL}${photo.src}`}
-                alt={photo.alt}
-                loading="lazy"
-              />
-              <figcaption>{photo.caption}</figcaption>
-            </figure>
-          ))}
+          <div className={`detail-gallery ${item.photos?.length === 1 ? "detail-gallery-single" : ""}`}>
+            {item.photos?.map((photo) => (
+              <figure className="detail-photo" key={photo.src}>
+                <img
+                  src={`${import.meta.env.BASE_URL}${photo.src}`}
+                  alt={photo.alt}
+                  width={photo.width}
+                  height={photo.height}
+                  loading="lazy"
+                />
+                <figcaption>{photo.caption}</figcaption>
+              </figure>
+            ))}
+          </div>
           <div className="empty-state">
             <h2>
               {item.verifiedAlbum

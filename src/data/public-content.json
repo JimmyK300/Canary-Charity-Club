@@ -44,15 +44,40 @@
         "title": "Concert Trầm",
         "abstract": "Tư liệu hình ảnh từ album gây quỹ Concert Trầm — Gen 2 của câu lạc bộ.",
         "thumbnail": {
-          "src": "images/archive/concert-tram-640.webp",
-          "alt": "Các thành viên Canary trong ảnh recap Concert Trầm"
+          "src": "images/archive/concert-stage-640.webp",
+          "alt": "Chùm ảnh hát, nhảy và chơi nhạc trong album Concert Trầm",
+          "width": 640,
+          "height": 640
         },
         "verifiedAlbum": "Gây quỹ / Concert Trầm-Gen 2",
         "photos": [
           {
             "src": "images/archive/concert-tram-1280.webp",
-            "alt": "Các thành viên Canary trong ảnh recap Concert Trầm",
-            "caption": "Concert Trầm · Album gây quỹ, Gen 2"
+            "alt": "Ảnh tập thể Canary trong tư liệu Concert Trầm",
+            "caption": "Ảnh tập thể trong album Concert Trầm — Gen 2.",
+            "width": 1280,
+            "height": 849
+          },
+          {
+            "src": "images/archive/concert-stage-1280.webp",
+            "alt": "Chùm ảnh hát, nhảy và chơi nhạc trong album Concert Trầm",
+            "caption": "Các khoảnh khắc biểu diễn được ghép trong tư liệu của câu lạc bộ.",
+            "width": 1080,
+            "height": 1080
+          },
+          {
+            "src": "images/archive/concert-moment-1280.webp",
+            "alt": "Một người cầm micro cùng hai người trên sân khấu",
+            "caption": "Một khoảnh khắc trên sân khấu trong album Concert Trầm.",
+            "width": 1080,
+            "height": 1080
+          },
+          {
+            "src": "images/archive/concert-friends-1280.webp",
+            "alt": "Ảnh ghép tập thể và những người tham dự Concert Trầm",
+            "caption": "Những gương mặt và ảnh tập thể trong album Concert Trầm.",
+            "width": 1080,
+            "height": 1080
           }
         ]
       },
@@ -60,20 +85,74 @@
         "title": "Quảng Ngãi — Trọn Niềm Vui",
         "abstract": "Hình ảnh lưu trữ từ album thiện nguyện Quảng Ngãi — Trọn Niềm Vui, Gen 2.",
         "thumbnail": {
-          "src": "images/archive/quang-ngai-activity-640.webp",
-          "alt": "Một thành viên Canary trò chuyện cùng các em nhỏ"
+          "src": "images/archive/quang-ngai-gifts-640.webp",
+          "alt": "Các em nhỏ và người lớn đứng cùng nhau, cầm túi và phong bì",
+          "width": 640,
+          "height": 360
         },
         "verifiedAlbum": "Thiện nguyện / Quảng Ngãi-Trọn Niềm Vui-Gen 2",
         "photos": [
           {
             "src": "images/archive/quang-ngai-activity-1280.webp",
-            "alt": "Một thành viên Canary trò chuyện cùng các em nhỏ",
-            "caption": "Quảng Ngãi — Trọn Niềm Vui · Album thiện nguyện, Gen 2"
+            "alt": "Một thành viên Canary cầm micro trò chuyện cùng một em nhỏ",
+            "caption": "Cuộc trò chuyện tại sân trường trong album Quảng Ngãi — Trọn Niềm Vui.",
+            "width": 960,
+            "height": 1280
+          },
+          {
+            "src": "images/archive/quang-ngai-gifts-1280.webp",
+            "alt": "Các em nhỏ và người lớn đứng cùng nhau, cầm túi và phong bì",
+            "caption": "Một ảnh tập thể trước sân trường; các em cầm túi và phong bì.",
+            "width": 1280,
+            "height": 721
+          },
+          {
+            "src": "images/archive/quang-ngai-school-group-1280.webp",
+            "alt": "Ảnh tập thể trước bảng Trọn Niềm Vui ở sân trường",
+            "caption": "Các thành viên và những người tham dự chụp ảnh trước bảng Trọn Niềm Vui.",
+            "width": 1280,
+            "height": 960
           },
           {
             "src": "images/archive/quang-ngai-group-1280.webp",
-            "alt": "Hai người cầm dụng cụ làm vườn ngoài trời trong tư liệu Quảng Ngãi",
-            "caption": "Một khoảnh khắc khác từ album Quảng Ngãi — Trọn Niềm Vui, Gen 2"
+            "alt": "Hai người cầm dụng cụ làm vườn ngoài trời",
+            "caption": "Một cảnh ngoài trời trong album Quảng Ngãi — Trọn Niềm Vui.",
+            "width": 960,
+            "height": 1280
+          },
+          {
+            "src": "images/archive/quang-ngai-cleaning-1280.webp",
+            "alt": "Những người dùng chổi để dọn một căn phòng",
+            "caption": "Cảnh cùng dọn một căn phòng trong tư liệu Quảng Ngãi.",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "images/archive/quang-ngai-visitors-1280.webp",
+            "alt": "Nhóm người đứng chụp ảnh trước một ngôi nhà",
+            "caption": "Một ảnh tập thể khác từ album Quảng Ngãi — Trọn Niềm Vui.",
+            "width": 1280,
+            "height": 721
+          }
+        ]
+      },
+      "event_gia_dinh": {
+        "title": "Gia Đình 3 — Yêu",
+        "abstract": "Ảnh tập thể trong không gian sinh hoạt, được lưu lại trong album Gia Đình 3 — Yêu của câu lạc bộ.",
+        "thumbnail": {
+          "src": "images/archive/gia-dinh-3-640.webp",
+          "alt": "Người lớn và trẻ em cùng chụp ảnh trong một phòng sinh hoạt",
+          "width": 640,
+          "height": 427
+        },
+        "verifiedAlbum": "Thiện nguyện / Gia Đình 3-Yêu",
+        "photos": [
+          {
+            "src": "images/archive/gia-dinh-3-1280.webp",
+            "alt": "Người lớn và trẻ em cùng chụp ảnh trong một phòng sinh hoạt",
+            "caption": "Ảnh tập thể trong album Gia Đình 3 — Yêu.",
+            "width": 1280,
+            "height": 853
           }
         ]
       }
@@ -81,38 +160,117 @@
     "story_overviews": {
       "story_concert_tram": {
         "title": "Khoảnh khắc Concert Trầm",
-        "abstract": "Các thành viên Canary cùng xuất hiện trong ảnh recap của album Concert Trầm — Gen 2.",
+        "abstract": "Những khoảnh khắc trên sân khấu và ảnh tập thể trong album Concert Trầm — Gen 2.",
         "thumbnail": {
-          "src": "images/archive/concert-tram-640.webp",
-          "alt": "Các thành viên Canary trong ảnh recap Concert Trầm"
+          "src": "images/archive/concert-moment-640.webp",
+          "alt": "Một người cầm micro cùng hai người trên sân khấu",
+          "width": 640,
+          "height": 640
         },
         "verifiedAlbum": "Gây quỹ / Concert Trầm-Gen 2",
         "photos": [
           {
             "src": "images/archive/concert-tram-1280.webp",
-            "alt": "Các thành viên Canary trong ảnh recap Concert Trầm",
-            "caption": "Concert Trầm · Album gây quỹ, Gen 2"
+            "alt": "Ảnh tập thể Canary trong tư liệu Concert Trầm",
+            "caption": "Ảnh tập thể trong album Concert Trầm — Gen 2.",
+            "width": 1280,
+            "height": 849
+          },
+          {
+            "src": "images/archive/concert-stage-1280.webp",
+            "alt": "Chùm ảnh hát, nhảy và chơi nhạc trong album Concert Trầm",
+            "caption": "Các khoảnh khắc biểu diễn được ghép trong tư liệu của câu lạc bộ.",
+            "width": 1080,
+            "height": 1080
+          },
+          {
+            "src": "images/archive/concert-moment-1280.webp",
+            "alt": "Một người cầm micro cùng hai người trên sân khấu",
+            "caption": "Một khoảnh khắc trên sân khấu trong album Concert Trầm.",
+            "width": 1080,
+            "height": 1080
+          },
+          {
+            "src": "images/archive/concert-friends-1280.webp",
+            "alt": "Ảnh ghép tập thể và những người tham dự Concert Trầm",
+            "caption": "Những gương mặt và ảnh tập thể trong album Concert Trầm.",
+            "width": 1080,
+            "height": 1080
           }
         ]
       },
       "story_quang_ngai": {
         "title": "Khoảnh khắc tại Quảng Ngãi",
-        "abstract": "Một cuộc trò chuyện cùng các em nhỏ và một cảnh ngoài trời trong album Quảng Ngãi — Trọn Niềm Vui, Gen 2.",
+        "abstract": "Từ sân trường đến một căn phòng được cùng nhau dọn dẹp: những hình ảnh trong album Quảng Ngãi — Trọn Niềm Vui.",
         "thumbnail": {
-          "src": "images/archive/quang-ngai-activity-640.webp",
-          "alt": "Một thành viên Canary trò chuyện cùng các em nhỏ"
+          "src": "images/archive/quang-ngai-cleaning-640.webp",
+          "alt": "Những người dùng chổi để dọn một căn phòng",
+          "width": 640,
+          "height": 480
         },
         "verifiedAlbum": "Thiện nguyện / Quảng Ngãi-Trọn Niềm Vui-Gen 2",
         "photos": [
           {
             "src": "images/archive/quang-ngai-activity-1280.webp",
-            "alt": "Một thành viên Canary trò chuyện cùng các em nhỏ",
-            "caption": "Quảng Ngãi — Trọn Niềm Vui · Album thiện nguyện, Gen 2"
+            "alt": "Một thành viên Canary cầm micro trò chuyện cùng một em nhỏ",
+            "caption": "Cuộc trò chuyện tại sân trường trong album Quảng Ngãi — Trọn Niềm Vui.",
+            "width": 960,
+            "height": 1280
+          },
+          {
+            "src": "images/archive/quang-ngai-gifts-1280.webp",
+            "alt": "Các em nhỏ và người lớn đứng cùng nhau, cầm túi và phong bì",
+            "caption": "Một ảnh tập thể trước sân trường; các em cầm túi và phong bì.",
+            "width": 1280,
+            "height": 721
+          },
+          {
+            "src": "images/archive/quang-ngai-school-group-1280.webp",
+            "alt": "Ảnh tập thể trước bảng Trọn Niềm Vui ở sân trường",
+            "caption": "Các thành viên và những người tham dự chụp ảnh trước bảng Trọn Niềm Vui.",
+            "width": 1280,
+            "height": 960
           },
           {
             "src": "images/archive/quang-ngai-group-1280.webp",
-            "alt": "Hai người cầm dụng cụ làm vườn ngoài trời trong tư liệu Quảng Ngãi",
-            "caption": "Một khoảnh khắc khác từ album Quảng Ngãi — Trọn Niềm Vui, Gen 2"
+            "alt": "Hai người cầm dụng cụ làm vườn ngoài trời",
+            "caption": "Một cảnh ngoài trời trong album Quảng Ngãi — Trọn Niềm Vui.",
+            "width": 960,
+            "height": 1280
+          },
+          {
+            "src": "images/archive/quang-ngai-cleaning-1280.webp",
+            "alt": "Những người dùng chổi để dọn một căn phòng",
+            "caption": "Cảnh cùng dọn một căn phòng trong tư liệu Quảng Ngãi.",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "images/archive/quang-ngai-visitors-1280.webp",
+            "alt": "Nhóm người đứng chụp ảnh trước một ngôi nhà",
+            "caption": "Một ảnh tập thể khác từ album Quảng Ngãi — Trọn Niềm Vui.",
+            "width": 1280,
+            "height": 721
+          }
+        ]
+      },
+      "story_gia_dinh": {
+        "title": "Gia Đình 3 — Yêu",
+        "abstract": "Ảnh tập thể trong không gian sinh hoạt, được lưu lại trong album Gia Đình 3 — Yêu của câu lạc bộ.",
+        "thumbnail": {
+          "src": "images/archive/gia-dinh-3-640.webp",
+          "alt": "Người lớn và trẻ em cùng chụp ảnh trong một phòng sinh hoạt",
+          "width": 640,
+          "height": 427
+        },
+        "verifiedAlbum": "Thiện nguyện / Gia Đình 3-Yêu",
+        "photos": [
+          {
+            "src": "images/archive/gia-dinh-3-1280.webp",
+            "alt": "Người lớn và trẻ em cùng chụp ảnh trong một phòng sinh hoạt",
+            "caption": "Ảnh tập thể trong album Gia Đình 3 — Yêu.",
+            "width": 1280,
+            "height": 853
           }
         ]
       }
@@ -128,6 +286,56 @@
       "projects": "Dự án & hoạt động",
       "members": "Thành viên",
       "activity_history": "Lịch sử hoạt động"
-    }
+    },
+    "archive_gallery": [
+      {
+        "src": "images/archive/concert-friends-640.webp",
+        "alt": "Ảnh ghép tập thể và những người tham dự Concert Trầm",
+        "width": 640,
+        "height": 640,
+        "caption": "Những gương mặt và ảnh tập thể trong album Concert Trầm.",
+        "detailId": "story_concert_tram"
+      },
+      {
+        "src": "images/archive/quang-ngai-activity-640.webp",
+        "alt": "Một thành viên Canary cầm micro trò chuyện cùng một em nhỏ",
+        "width": 640,
+        "height": 853,
+        "caption": "Cuộc trò chuyện tại sân trường trong album Quảng Ngãi — Trọn Niềm Vui.",
+        "detailId": "story_quang_ngai"
+      },
+      {
+        "src": "images/archive/quang-ngai-school-group-640.webp",
+        "alt": "Ảnh tập thể trước bảng Trọn Niềm Vui ở sân trường",
+        "width": 640,
+        "height": 480,
+        "caption": "Các thành viên và những người tham dự chụp ảnh trước bảng Trọn Niềm Vui.",
+        "detailId": "story_quang_ngai"
+      },
+      {
+        "src": "images/archive/quang-ngai-group-640.webp",
+        "alt": "Hai người cầm dụng cụ làm vườn ngoài trời",
+        "width": 640,
+        "height": 853,
+        "caption": "Một cảnh ngoài trời trong album Quảng Ngãi — Trọn Niềm Vui.",
+        "detailId": "story_quang_ngai"
+      },
+      {
+        "src": "images/archive/quang-ngai-cleaning-640.webp",
+        "alt": "Những người dùng chổi để dọn một căn phòng",
+        "width": 640,
+        "height": 480,
+        "caption": "Cảnh cùng dọn một căn phòng trong tư liệu Quảng Ngãi.",
+        "detailId": "story_quang_ngai"
+      },
+      {
+        "src": "images/archive/quang-ngai-visitors-640.webp",
+        "alt": "Nhóm người đứng chụp ảnh trước một ngôi nhà",
+        "width": 640,
+        "height": 360,
+        "caption": "Một ảnh tập thể khác từ album Quảng Ngãi — Trọn Niềm Vui.",
+        "detailId": "story_quang_ngai"
+      }
+    ]
   }
 }
