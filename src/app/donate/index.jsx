@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Hero } from "../../components/presentation";
+import SupportDemo from "../../components/presentation/SupportDemo";
 const initialMessage =
   "Chào Canary,\nTôi muốn tìm hiểu cách đồng hành cùng câu lạc bộ.\nHình thức tôi quan tâm: tình nguyện / tài trợ / đóng góp.\nTên của tôi: \nThông tin liên hệ: \nNhờ Canary gửi thông tin hoạt động và hướng dẫn đã được xác nhận.\nCảm ơn câu lạc bộ!";
 export default function DonatePage() {
@@ -43,12 +44,13 @@ export default function DonatePage() {
         <button
           className="button"
           onClick={() =>
-            document.getElementById("support-options").scrollIntoView()
+            document.getElementById("dong-hanh").scrollIntoView()
           }
         >
           Tìm cách đồng hành
         </button>
       </Hero>
+      <SupportDemo />
       <section className="section container" id="support-options">
         <div className="section-heading">
           <div>

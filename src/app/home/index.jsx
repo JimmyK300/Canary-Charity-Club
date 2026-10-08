@@ -4,9 +4,9 @@ import GlobalContext from "../../contexts/GlobalContext";
 import {
   Hero,
   Entries,
-  SupportCTA,
   DemoNote,
 } from "../../components/presentation";
+import SupportDemo from "../../components/presentation/SupportDemo";
 export default function HomePage() {
   const { event_overviews, story_overviews } = useContext(GlobalContext);
   return (
@@ -58,7 +58,7 @@ export default function HomePage() {
         type="story"
         limit={3}
       />
-      <SupportCTA />
+      <SupportDemo />
       <DemoNote />
     </>
   );

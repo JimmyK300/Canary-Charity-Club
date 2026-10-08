@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 260 260" role="img" aria-labelledby="title desc">
+  <title id="title">DEMO — QR không thanh toán</title><desc id="desc">Hình giữ chỗ bị gạch chéo. Không mã hóa dữ liệu và không thể dùng để chuyển tiền.</desc>
+  <rect width="260" height="260" rx="16" fill="#edf2ff"/>
+  <g fill="none" stroke="#17274b" stroke-width="8"><path d="M26 26h48v48H26zM186 26h48v48h-48zM26 186h48v48H26z"/></g>
+  <g fill="#17274b"><path d="M40 40h20v20H40zM200 40h20v20h-20zM40 200h20v20H40zM94 28h12v24H94zM118 28h24v12h-24zM142 52h24v24h-24zM94 64h24v24H94zM28 94h24v12H28zM64 118h24v12H64zM190 94h12v24h-12zM214 130h20v12h-20zM94 190h12v24H94zM118 222h36v12h-36zM166 190h12v36h-12zM190 166h24v12h-24zM214 190h20v24h-20z"/></g>
+  <path d="M24 24L236 236M236 24L24 236" stroke="#4160df" stroke-width="9" opacity=".7"/>
+  <rect x="20" y="97" width="220" height="66" rx="8" fill="white" stroke="#4160df" stroke-width="2"/>
+  <text x="130" y="126" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="700" fill="#4160df">DEMO</text>
+  <text x="130" y="148" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#17274b">Không thanh toán</text>
+</svg>
