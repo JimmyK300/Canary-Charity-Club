@@ -14,7 +14,9 @@ npm run lint:public
 npm run build
 ```
 
-The normal build is in `dist/`, with the existing GitHub Pages base `/Canary-Charity-Club/`. The CI workflow builds and uploads an artifact only; it does not publish the site. The existing `npm run deploy` command is an explicit production publication action.
+The normal build is in `dist/`, with the existing GitHub Pages base `/Canary-Charity-Club/`. `build.yml` verifies the presentation. `pages.yml` builds and deploys the polished branch to **https://canary.pswork.dev/** through GitHub Actions and GitHub Pages, using Pages metadata to choose the correct asset base.
+
+The deployment repository is [JimmyK300/Canary-Charity-Club](https://github.com/JimmyK300/Canary-Charity-Club), a fork because the current account cannot administer Pages in the organization repository. The organization remote is preserved as `origin`; publish the presentation branch to the `deploy` remote to update this demo. Recursive checkout initializes the shared-component submodule. GitHub's `github-pages` environment permits `main` and `codex/canary-presentation`.
 
 For a separate review host at the domain root:
 
