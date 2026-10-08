@@ -1,0 +1,133 @@
+{
+  "global": {
+    "group_name": "CANARY",
+    "description": "Câu lạc bộ thiện nguyện Canary",
+    "primaryBackgroundColor": "#ffffff",
+    "secondaryBackgroundColor": "#4160df",
+    "tertiaryBackgroundColor": "#4160df"
+  },
+  "main": {
+    "hero_sections": {
+      "home": {
+        "image": ""
+      },
+      "about": {
+        "coverImage": "",
+        "title": "Về chúng tôi",
+        "description": "Canary là câu lạc bộ thiện nguyện do học sinh, sinh viên sáng lập, hướng đến việc hỗ trợ người khó khăn, đặc biệt là trẻ em vùng cao. Chúng tôi tổ chức các hoạt động quyên góp, giáo dục và lan tỏa tinh thần sẻ chia đến cộng đồng."
+      },
+      "events": {
+        "title": "Những sự kiện ý nghĩa",
+        "description": "Gặp gỡ, sẻ chia và cùng nhau hành động.",
+        "image": ""
+      },
+      "stories": {
+        "title": "Những kỉ niệm của chúng tôi",
+        "description": "Mỗi chuyến đi để lại một câu chuyện.",
+        "image": ""
+      }
+    },
+    "statements": {
+      "mission": {
+        "description": "Sứ mệnh của chúng tôi là mang đến cơ hội bình đẳng cho mọi người, đặc biệt là trẻ em và người yếu thế trong xã hội. Chúng tôi tin rằng mọi hành động tử tế, dù nhỏ, đều có thể tạo nên thay đổi lớn lao!",
+        "imageUrl": "",
+        "title": "Sứ mệnh"
+      },
+      "vision": {
+        "title": "Tầm nhìn",
+        "description": "Trở thành tổ chức thiện nguyện học sinh – sinh viên hàng đầu Việt Nam, nơi ươm mầm lòng nhân ái, phát triển kỹ năng lãnh đạo và hành động có trách nhiệm với cộng đồng.",
+        "imageUrl": ""
+      }
+    },
+    "event_overviews": {
+      "event_concert_tram": {
+        "title": "Concert Trầm",
+        "abstract": "Tư liệu hình ảnh từ album gây quỹ Concert Trầm — Gen 2 của câu lạc bộ.",
+        "thumbnail": {
+          "src": "images/archive/concert-tram-640.webp",
+          "alt": "Các thành viên Canary trong ảnh recap Concert Trầm"
+        },
+        "verifiedAlbum": "Gây quỹ / Concert Trầm-Gen 2",
+        "photos": [
+          {
+            "src": "images/archive/concert-tram-1280.webp",
+            "alt": "Các thành viên Canary trong ảnh recap Concert Trầm",
+            "caption": "Concert Trầm · Album gây quỹ, Gen 2"
+          }
+        ]
+      },
+      "event_quang_ngai": {
+        "title": "Quảng Ngãi — Trọn Niềm Vui",
+        "abstract": "Hình ảnh lưu trữ từ album thiện nguyện Quảng Ngãi — Trọn Niềm Vui, Gen 2.",
+        "thumbnail": {
+          "src": "images/archive/quang-ngai-activity-640.webp",
+          "alt": "Một thành viên Canary trò chuyện cùng các em nhỏ"
+        },
+        "verifiedAlbum": "Thiện nguyện / Quảng Ngãi-Trọn Niềm Vui-Gen 2",
+        "photos": [
+          {
+            "src": "images/archive/quang-ngai-activity-1280.webp",
+            "alt": "Một thành viên Canary trò chuyện cùng các em nhỏ",
+            "caption": "Quảng Ngãi — Trọn Niềm Vui · Album thiện nguyện, Gen 2"
+          },
+          {
+            "src": "images/archive/quang-ngai-group-1280.webp",
+            "alt": "Hai người cầm dụng cụ làm vườn ngoài trời trong tư liệu Quảng Ngãi",
+            "caption": "Một khoảnh khắc khác từ album Quảng Ngãi — Trọn Niềm Vui, Gen 2"
+          }
+        ]
+      }
+    },
+    "story_overviews": {
+      "story_concert_tram": {
+        "title": "Khoảnh khắc Concert Trầm",
+        "abstract": "Các thành viên Canary cùng xuất hiện trong ảnh recap của album Concert Trầm — Gen 2.",
+        "thumbnail": {
+          "src": "images/archive/concert-tram-640.webp",
+          "alt": "Các thành viên Canary trong ảnh recap Concert Trầm"
+        },
+        "verifiedAlbum": "Gây quỹ / Concert Trầm-Gen 2",
+        "photos": [
+          {
+            "src": "images/archive/concert-tram-1280.webp",
+            "alt": "Các thành viên Canary trong ảnh recap Concert Trầm",
+            "caption": "Concert Trầm · Album gây quỹ, Gen 2"
+          }
+        ]
+      },
+      "story_quang_ngai": {
+        "title": "Khoảnh khắc tại Quảng Ngãi",
+        "abstract": "Một cuộc trò chuyện cùng các em nhỏ và một cảnh ngoài trời trong album Quảng Ngãi — Trọn Niềm Vui, Gen 2.",
+        "thumbnail": {
+          "src": "images/archive/quang-ngai-activity-640.webp",
+          "alt": "Một thành viên Canary trò chuyện cùng các em nhỏ"
+        },
+        "verifiedAlbum": "Thiện nguyện / Quảng Ngãi-Trọn Niềm Vui-Gen 2",
+        "photos": [
+          {
+            "src": "images/archive/quang-ngai-activity-1280.webp",
+            "alt": "Một thành viên Canary trò chuyện cùng các em nhỏ",
+            "caption": "Quảng Ngãi — Trọn Niềm Vui · Album thiện nguyện, Gen 2"
+          },
+          {
+            "src": "images/archive/quang-ngai-group-1280.webp",
+            "alt": "Hai người cầm dụng cụ làm vườn ngoài trời trong tư liệu Quảng Ngãi",
+            "caption": "Một khoảnh khắc khác từ album Quảng Ngãi — Trọn Niềm Vui, Gen 2"
+          }
+        ]
+      }
+    },
+    "project_overviews": {},
+    "fundraising": {},
+    "members": [],
+    "activity_history": [],
+    "org_stats": {},
+    "section_titles": {
+      "events": "Những hoạt động đã chia sẻ",
+      "stories": "Những kỉ niệm của chúng tôi",
+      "projects": "Dự án & hoạt động",
+      "members": "Thành viên",
+      "activity_history": "Lịch sử hoạt động"
+    }
+  }
+}

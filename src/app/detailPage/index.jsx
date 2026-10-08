@@ -1,106 +1,67 @@
-import { useState, useEffect } from "react";
-import { useLocation } from "react-router";
-import { doc, getDoc } from "firebase/firestore";
-import { db } from "../../services/firebaseConfig";
-
-const DetailContent = () => {
-  const location = useLocation();
-  const { id, title: initialTitle, thumbnail: initialThumbnail } = location.state || {};
-
-  const [formData, setFormData] = useState({
-    title: initialTitle,
-    author: "",
-    date: "",
-    content: "",
-    gallery: [],
-    thumbnail: null,
-  });
-
-  const [thumbnailPreview, setThumbnailPreview] = useState(initialThumbnail || null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      if (id) {
-        const type = id.split("_")[0];
-        const collectionName = type.charAt(0).toUpperCase() + type.slice(1);
-        const docRef = doc(db, collectionName, id);
-        try {
-          const docSnap = await getDoc(docRef);
-          if (docSnap.exists()) {
-            const data = docSnap.data();
-            console.log(data.title)
-            setFormData({
-              title: data.title || initialTitle || "",
-              author: data.author || "",
-              date: data.date || "",
-              content: data.content || "",
-              gallery: data.gallery || [],
-              thumbnail: data.thumbnail || null,
-            });
-            setThumbnailPreview(data.thumbnail || initialThumbnail || null);
-          }
-        } catch (error) {
-          console.error("Error fetching document:", error);
-        }
-      }
-    };
-    fetchData();
-  }, [id, initialTitle, initialThumbnail]);
-
+import { useContext } from "react";
+import { Link, useLocation, useSearchParams } from "react-router-dom";
+import GlobalContext from "../../contexts/GlobalContext";
+export default function DetailContent() {
+  const { event_overviews, project_overviews, story_overviews } =
+    useContext(GlobalContext);
+  const [params] = useSearchParams();
+  const { state } = useLocation();
+  const id = params.get("id") || state?.id;
+  const item = { ...event_overviews, ...project_overviews, ...story_overviews }[
+    id
+  ];
+  const isStory = id?.startsWith("story");
   return (
-    <div className="flex justify-center min-h-screen mt-20">
-      <div className="w-full max-w-4xl p-8 bg-white rounded-lg shadow-xl">
-        {/* Thumbnail */}
-        {thumbnailPreview && (
-          <div className="mb-8">
-            <img
-              src={thumbnailPreview}
-              alt="Thumbnail"
-              className="w-full h-auto max-h-120 object-cover mx-auto rounded-lg shadow-lg"
-            />
+    <article className="container detail-page">
+      <Link className="text-link" to={isStory ? "/stories" : "/events"}>
+        Quay lại {isStory ? "câu chuyện" : "hoạt động"}
+      </Link>
+      {item ? (
+        <>
+          <p className="demo-label">
+            {item.verifiedAlbum
+              ? "Tư liệu từ câu lạc bộ"
+              : "Nội dung từ bản mẫu Canary"}
+          </p>
+          <h1>{item.title}</h1>
+          <p className="detail-lead">
+            {item.abstract || "Bài viết chi tiết đang được chuẩn bị."}
+          </p>
+          {item.photos?.map((photo) => (
+            <figure className="detail-photo" key={photo.src}>
+              <img
+                src={`${import.meta.env.BASE_URL}${photo.src}`}
+                alt={photo.alt}
+                loading="lazy"
+              />
+              <figcaption>{photo.caption}</figcaption>
+            </figure>
+          ))}
+          <div className="empty-state">
+            <h2>
+              {item.verifiedAlbum
+                ? "Thông tin hoạt động đang được cập nhật"
+                : "Câu chuyện đang được hoàn thiện"}
+            </h2>
+            <p>
+              {item.verifiedAlbum
+                ? "Ảnh được lấy từ album của câu lạc bộ. Ngày tổ chức, báo cáo hoạt động và kết quả gây quỹ chưa được xác nhận để công bố trên website."
+                : "Đây là phần giới thiệu từ bản mẫu. Bài viết đầy đủ và hình ảnh sẽ được bổ sung khi câu lạc bộ xác nhận nội dung."}
+            </p>
           </div>
-        )}
-
-        {/* Title */}
-        <h1 className="text-3xl font-bold mb-6">{formData.title}</h1>
-
-        {/* Author and Date */}
-        <div className="flex flex-row items-center mb-4">
-          <span className="font-medium text-gray-700 mr-2">From:</span>
-          <span>{formData.author}</span>
-        </div>
-        <div className="flex flex-row items-center mb-4">
-          <span className="font-medium text-gray-700 mr-2">Date:</span>
-          <span>{formData.date}</span>
-        </div>
-
-        <hr className="w-full border-t-2 border-gray-500 my-3" />
-
-        {/* Content */}
-        <div className="whitespace-pre-line mb-8">
-          {formData.content}
-        </div>
-
-        {/* Gallery */}
-        {formData.gallery.length > 0 && (
-          <div className="mb-8">
-            <label className="block text-gray-700 font-medium mb-2">Gallery:</label>
-            <div className="grid grid-cols-3 gap-4 mt-4">
-              {formData.gallery.map((url, index) => (
-                <div key={index} className="relative group">
-                  <img
-                    src={url}
-                    alt={`Gallery image ${index + 1}`}
-                    className="w-full h-48 object-cover rounded-lg shadow-md"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
+        </>
+      ) : (
+        <>
+          <h1>Chưa tìm thấy bài viết</h1>
+          <p>
+            Bài viết có thể chưa được công bố. Bạn có thể khám phá các hoạt động
+            và câu chuyện khác của Canary.
+          </p>
+          <Link className="button" to="/stories">
+            Xem câu chuyện
+          </Link>
+        </>
+      )}
+    </article>
   );
-};
-
-export default DetailContent;
+}

@@ -1,29 +1,44 @@
-import { useContext, useEffect } from 'react';
-import GlobalContext from '../../contexts/GlobalContext';
-import AboutHeroSectionDisplay from '../../../Section-And-Core-Component/CanarySectionsModel/AboutCanary/HeroSection/AboutHeroSectionDisplay';
-import MissionDisplay from '../../../Section-And-Core-Component/CanarySectionsModel/AboutCanary/Mission/MissionDisplay';
-import VisionDisplay from '../../../Section-And-Core-Component/CanarySectionsModel/AboutCanary/Vision/VisionDisplay';
-import StoriesHighlightDisplay from '../../../Section-And-Core-Component/CanarySectionsModel/AboutCanary/StoriesHighlight/StoriesHighlightDisplay';
-import MemberListDisplay from '../../../Section-And-Core-Component/CanarySectionsModel/AboutCanary/Member/MemberListDisplay';
-import TimelineDisplay from '../../../Section-And-Core-Component/CanarySectionsModel/AboutCanary/Timeline/TimelineDisplay';
-import ProjectHighlightDisplay from '../../../Section-And-Core-Component/CanarySectionsModel/AboutCanary/ProjectsHighlight/ProjectsHighlightDisplay';
-
-function Aboutpage() {
-  const { setCurrentPage, heroSections, statements, storyOverviews, members, activityHistory, projectOverviews, sectionTitles } = useContext(GlobalContext);
-
-  useEffect(() => setCurrentPage('about'), [setCurrentPage]);
-
+import { useContext } from "react";
+import GlobalContext from "../../contexts/GlobalContext";
+import { Hero, SupportCTA, DemoNote } from "../../components/presentation";
+export default function AboutPage() {
+  const { hero_sections, statements } = useContext(GlobalContext);
   return (
-    <div className="w-full">
-      <AboutHeroSectionDisplay image={heroSections?.about?.coverImage || ''} title={heroSections?.about?.title} description={heroSections?.about?.description} />
-      <MissionDisplay missionTitle={statements?.mission?.title || ''} missionImage={statements?.mission?.imageUrl || ''} missionDescription={statements?.mission?.description} />
-      <VisionDisplay visionTitle={statements?.vision?.title || ''} visionImage={statements?.vision?.imageUrl || ''} visionDescription={statements?.vision?.description} />
-      <StoriesHighlightDisplay title={sectionTitles.stories || 'Những kỉ niệm của chúng tôi'} listData={storyOverviews || {}} />
-      <MemberListDisplay title={sectionTitles.members || 'Thành viên'} listData={members || []} />
-      <TimelineDisplay title={sectionTitles.activity_history || 'Lịch sử hoạt động'} listData={activityHistory || []} />
-      <ProjectHighlightDisplay title={sectionTitles.projects || 'Dự án & hoạt động nổi bật đã thực hiện'} listData={projectOverviews || {}} />
-    </div>
+    <>
+      <Hero
+        title="Về Canary"
+        description={hero_sections.about.description}
+        image="images/archive/quang-ngai-activity-1280.webp"
+        imageAlt="Một thành viên Canary trò chuyện cùng các em nhỏ trong tư liệu Quảng Ngãi"
+        caption="Quảng Ngãi — Trọn Niềm Vui · Tư liệu câu lạc bộ, Gen 2"
+        imageHeight={1280}
+        imageWidth={960}
+        compact
+      />
+      <section className="section container statement-grid">
+        {Object.entries(statements).map(([id, statement]) => (
+          <article key={id}>
+            <h2>{statement.title}</h2>
+            <p>{statement.description}</p>
+          </article>
+        ))}
+      </section>
+      <section className="section container about-community">
+        <h2>Không chỉ là một chuyến đi.</h2>
+        <p>
+          Canary là nơi học sinh, sinh viên cùng lan tỏa tinh thần sẻ chia đến
+          cộng đồng.
+        </p>
+        <div className="empty-state">
+          <h3>Gặp gỡ đội ngũ Canary</h3>
+          <p>
+            Danh sách thành viên và lịch sử hoạt động đang chờ câu lạc bộ xác
+            nhận để công bố.
+          </p>
+        </div>
+      </section>
+      <SupportCTA />
+      <DemoNote />
+    </>
   );
 }
-
-export default Aboutpage;

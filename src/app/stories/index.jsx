@@ -1,26 +1,32 @@
-import { useContext, useEffect } from 'react';
-import GlobalContext from '../../contexts/GlobalContext';
-import './styles.css';
-import StoriesHeroSectionDisplay from '../../../Section-And-Core-Component/CanarySectionsModel/Story/HeroSection/StoryHeroSectionDisplay';
-import StoriesListDisplay from '../../../Section-And-Core-Component/CanarySectionsModel/Story/StoriesList/StoriesListDisplay';
-
-function StoriesPage() {
-  const { setCurrentPage, heroSections, storyOverviews, sectionTitles, secondaryBackgroundColor } = useContext(GlobalContext);
-
-  useEffect(() => setCurrentPage('stories'), [setCurrentPage]);
-
+import { useContext } from "react";
+import GlobalContext from "../../contexts/GlobalContext";
+import {
+  Hero,
+  Entries,
+  SupportCTA,
+  DemoNote,
+} from "../../components/presentation";
+export default function StoriesPage() {
+  const { story_overviews } = useContext(GlobalContext);
   return (
-    <div className="w-full">
-      <StoriesHeroSectionDisplay
-        title={heroSections?.stories?.title}
-        description={heroSections?.stories?.description}
-        image={heroSections?.stories?.image || ''}
-        id={heroSections?.stories?.id}
-        buttonColor={secondaryBackgroundColor}
+    <>
+      <Hero
+        title="Mỗi chuyến đi, một câu chuyện."
+        description="Những khoảnh khắc được lưu lại trong các album của Canary."
+        image="images/archive/quang-ngai-activity-1280.webp"
+        imageAlt="Một thành viên Canary trò chuyện cùng các em nhỏ trong tư liệu Quảng Ngãi"
+        caption="Quảng Ngãi — Trọn Niềm Vui · Tư liệu câu lạc bộ, Gen 2"
+        imageHeight={1280}
+        imageWidth={960}
+        compact
       />
-      <StoriesListDisplay title={sectionTitles.stories || 'Những kỉ niệm của chúng tôi'} listData={storyOverviews || {}} />
-    </div>
+      <Entries
+        title="Những kỉ niệm của chúng tôi"
+        data={story_overviews}
+        type="story"
+      />
+      <SupportCTA />
+      <DemoNote />
+    </>
   );
 }
-
-export default StoriesPage;
